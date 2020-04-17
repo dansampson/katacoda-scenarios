@@ -7,7 +7,8 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "verify": "step1-verify.sh"
       },
       {
         "title": "Step 2",
@@ -29,10 +30,14 @@
       "text": "finish.md"
     }
   },
+
   "environment": {
+    "hideintro": true,
+    "hidefinish": true,
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "kafka:2.4"
+    "imageid": "git"
   }
+  
 }
